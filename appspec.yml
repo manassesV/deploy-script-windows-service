@@ -1,0 +1,12 @@
+version: 0.0
+os: windows
+files:
+    - source: build_output\
+      destination: C:\inetpub\wwwroot
+hooks:
+    BeforeInstall:
+      - location: deploy-scripts\before-instal.ps1
+        timeout: 900
+    AfterInstall:
+      - location: deploy-scripts\after-install.ps1
+        timeout: 900
