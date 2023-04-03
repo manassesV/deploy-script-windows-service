@@ -7,14 +7,8 @@
     <RootNamespace>aws_codedeploy_windows_scripts</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="after-install.ps1" />
-    <None Remove="before-install.ps1" />
-  </ItemGroup>
+  
 
-  <ItemGroup>
-    <Compile Include="before-install.ps1" />
-    <Compile Include="after-install.ps1" />
-  </ItemGroup>
+  
 
 </Project>
