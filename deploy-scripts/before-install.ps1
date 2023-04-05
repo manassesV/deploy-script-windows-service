@@ -11,7 +11,7 @@ Stop-WebAppPool -Name $appPool
 
 do{
 
-    $status = (GetWebAppPoolState -name $appPool).Value
+    $status = (Get-WebAppPoolState -name $appPool).Value
 
     if($status -eq "Stopped"){
         $success = $true;
