@@ -19,7 +19,7 @@ do{
     }else{
         Write-Host "Let's wait a few seconds. $appPool is $status"
         Start-Sleep -s 10
-        $currentRetry = currentRetry + 1;
+        $currentRetry = $currentRetry + 1;
     }
 
 }while(!$success -and $currentRetry -le 4)
